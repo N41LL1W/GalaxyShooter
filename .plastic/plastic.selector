@@ -1,0 +1,4 @@
+repository "GalaxyShooter@unity_81AA3EF284F822D140A2@cloud"
+  path "/"
+    br "/main"
+    co "/main"
