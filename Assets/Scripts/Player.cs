@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //public or private identify
+    //data type ( int, float, bool, string )
+    //every variable has a NAME
+    //option value assigned
+    public float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
+        //current pos = new positon
         transform.position = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float vertivcalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * vertivcalInput * Time.deltaTime);
     }
 }
