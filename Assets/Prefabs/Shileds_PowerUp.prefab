@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 273665931710263481}
   - component: {fileID: 7997714515530931872}
   m_Layer: 0
-  m_Name: Shileds
+  m_Name: Shileds_PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
